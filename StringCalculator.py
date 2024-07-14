@@ -3,5 +3,6 @@ def add(*ip_data):
     if not ip_data:
         return 0
     for i in ip_data:
-        sum += int(i)
+        if i.isdigit():
+            sum += int(i)
     return sum
