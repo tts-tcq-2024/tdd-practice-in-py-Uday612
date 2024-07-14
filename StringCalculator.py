@@ -1,4 +1,7 @@
-def add(ip):
-    if not ip:
+def add(*ip_data):
+    sum = 0
+    if not ip_data:
         return 0
-    return int(ip)
+    for i in ip_data:
+        sum += int(i)
+    return sum
