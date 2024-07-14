@@ -1,2 +1,4 @@
 def add(ip):
-    return int(ip)
+    if not ip:
+        return 0
+    return ip
