@@ -1,2 +1,2 @@
 def add(ip):
-    return
+    return 0
