@@ -3,8 +3,8 @@ def add(ip_data):
     
     if not ip_data:
         return 0
-        
-    for i in ip_data:
-        if i.isdigit():
+    data = ip_data.split(',')
+    for i in data:
+        if i.isdigit() and int(i)<1000:
             sum += int(i)
     return sum
