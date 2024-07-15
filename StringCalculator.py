@@ -1,6 +1,5 @@
 def processCustomDelimiter(ip_data):
     delimiter = ip_data[2]
-    number = ip_data.split('\n')
     numbers_part = ip_data.split('\n')[1]
     return sum_data(numbers_part.split(delimiter))
 
