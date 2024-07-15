@@ -11,7 +11,7 @@ def processDelimiter(data_ip):
 def sum_data(list_data):
     sum = 0
     for i in list_data:
-        if i.isdigit() and int(i)<1000:
+        if int(i)<1000:
             sum += int(i)
     return sum
 
